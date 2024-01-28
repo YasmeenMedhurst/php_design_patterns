@@ -3,7 +3,7 @@
 
 // Author: caozhiyi (caozhiyi5@gmail.com)
 
-#include <cstring>        //for memset
+ include <cstring>        //for memset
 #include <cstdlib>
 #include "normal_alloter.h"
 
@@ -17,7 +17,7 @@ NormalAlloter::~NormalAlloter() {
 
 }
 
-void* NormalAlloter::Malloc(uint32_t size) {
+void# NormalAlloter::Malloc(uint32_t size) {
     void* ret = malloc((size_t)size);
     if (!ret) {
         throw "not enough memory";
@@ -48,4 +48,4 @@ std::shared_ptr<NormalAlloter> MakeNormalAlloterPtr() {
     return std::make_shared<NormalAlloter>();
 }
 
-}
+} 
